@@ -1,0 +1,63 @@
+
+
+<div class="mid background" ng-if="feed.user && infinite.mine === true" ng-style="{ 'background-image' : theCover}">
+
+<div class="col-1">
+
+ <img ng-src="{{feed.user.local.thumb}}" width="170px" height="170px" >
+
+ <h6> {{feed.user.local.username}} </h6>
+
+
+
+
+
+<div class="btns">
+
+</div>
+
+
+
+<div class="profzone" contentEditable="true">
+Rango'd sucka
+</div>
+
+
+
+</div>
+
+
+
+<div class="profbox">
+
+<ul>
+  <li ng-repeat="boxed in feed.user.local.theirBox">
+<img ng-src="{{boxed.path}}"  height="85px" width="85px">
+  </li>
+</ul>
+
+
+
+</div>
+
+
+
+<div class="profbox">
+
+  <!--
+
+<div ng-repeat="color in bigBg">
+  <input type="color" ng-model="color">
+</div>
+
+-->
+<button ng-file-select ng-file-change="thumb($files)" ng-model="files" ng-multiple="false">change avatar </button>
+<button ng-file-select ng-file-change="cover($files)" ng-model="files" ng-multiple="false">change cover </button>
+<button >edit bio </button>
+
+</div>
+
+
+
+
+ </div>

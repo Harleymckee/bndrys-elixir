@@ -1,0 +1,656 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// profile ====================================================================================
+
+.mid {
+  width: 1080px;
+height: 450px;
+float:left;
+background: white;
+margin-top: 10px;
+margin-left:0px;
+background-size:cover;
+background-repeat: repeat;
+background-attachment: fixed;
+background-position: center;
+box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.6);
+
+img {
+   margin-top: 10px;
+}
+h6 {
+  padding:4px;
+    margin-top: 10px;
+  margin-left: 25px;
+  background: white;
+   box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+
+}
+
+
+display:flex;
+
+.btns {
+
+  margin-left: 40px;
+
+  button{
+     box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+     border:none;
+  background:white;
+  color:black;
+   transition: background 0.7s ease;
+}
+
+  button:hover{
+
+  background:black;
+  color:white;
+}
+}
+
+
+}
+
+
+
+.profzone {
+   box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+  width:250px;
+  height:155px;
+  overflow-y: scroll;
+  background:white;
+  margin-left:20px;
+    margin-top:10px;
+}
+
+.profbox {
+     transition: background 0.7s ease;
+      margin-top:10px;
+margin-left: 10px;
+    height: 400px;
+  width: 545px;
+background: transparent;
+  float:left;
+  overflow: hidden;
+  overflow-y:scroll;
+
+  input {
+    outline:none;
+height:34px;
+  width:10%;
+  background:transparent;
+  border:0px solid transparent;
+  }
+
+
+  li {
+    box-shadow: 0px 0px 0px transparent;
+    list-style: none;
+  padding-left: 10px;
+    float:left;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.infload {
+    margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
+
+	img {
+
+
+
+	}
+
+
+}
+// title
+
+
+.byuser {
+
+
+
+padding-top:1px;
+  h5 {
+    margin-left: 0px;
+margin-top: 6px;
+font-size: 17px;
+
+  }
+
+  h6{
+text-align:center;
+margin-top: -8px;
+ font-size: 16px;
+
+
+  }
+
+  img {
+
+    margin-left: 0px;
+margin-top: -1px;
+  }
+
+
+.uname:hover {
+
+  background: yellow;
+ //box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.8);
+
+ //margin-left: 2px;
+
+
+}
+
+span:hover {
+background:red;
+cursor:pointer;
+
+}
+
+}
+
+
+
+
+
+// structure ==================================================================
+
+
+$bgbg : white;
+
+.wrappp2 {
+  border-radius:10px;
+	min-height: 62px;
+	//margin-left:130px;
+	margin-top: 10px;
+  margin-bottom: 10px;
+	background: $bgbg;
+//	background: white;
+	box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+
+	width: 570px;
+//  box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+
+
+}
+.wrappp2:hover {
+
+
+}
+
+
+
+
+.feedul {
+  margin-top: 10px;
+  background:rgba(255,255,255, 0.4);
+  width: 1100px;
+margin-left: 8vw;
+padding-left: 10px;
+display: flex;
+  flex-flow: row wrap;
+
+
+padding-bottom:20px;
+
+ justify-content: flex-start;
+
+
+}
+
+
+@media (max-width: 1200px) {
+
+  .feedul {
+    width:697px;
+  }
+
+}
+
+
+.feedli {
+margin-right:12px;
+}
+
+
+.feedli:hover {
+
+
+
+}
+.homeholder {
+
+
+	   margin-left: -12px;
+	  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background:transparent;
+//  border-bottom:1px dashed RGBA(0, 0, 0, 0.1);
+  //padding-bottom: 10px;
+}
+
+.home {
+
+float:left;
+  margin-left: 10px;
+  padding-left: 2px;
+
+
+
+  h1 {
+  //  border: solid black 1px;
+border-radius:10px;
+box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+  // float:left;
+
+
+    padding-top: 8px;
+    padding-bottom: 9px;
+
+ font-family:sans-serif;
+  font-style: normal;
+  font-weight: 600 !important;
+
+  width: 260px;
+  color:black;
+ background: white;
+   margin-bottom: 0px;
+   transition: background 0.7s ease;
+   font-size:58px;
+
+  }
+
+  h1.make {
+ //   margin-left:10px;
+  }
+     h1.invi {
+      background:transparent;
+    margin-left:340px;
+       margin-top:10px;
+  }
+
+      h1.invi:hover {
+  background:transparent;
+cursor: none;
+      }
+   h1.cancel {
+    margin-left:10px;
+       margin-top:10px;
+  }
+
+  h1:hover {
+
+  a{
+    color: white;
+  }
+cursor:pointer;
+
+  color: white;
+  background:black;
+
+}
+}
+
+
+
+
+// stage ==================================================================
+
+$bordd:1px ;
+$stagewid: 850px;
+
+$stageht:$stagewid * 0.5;
+.stage2 {
+
+	//margin-right: 8%;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	//border:$bordd solid #BFBFBF;
+
+  	width: 570px;
+
+	height: $stageht;
+		overflow: hidden;
+	background: $bgbg ;
+	background-size:cover;
+		overflow: hidden;
+		position: relative;
+box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+z-index: -0;
+
+	//border-radius: 10px;
+
+}
+
+.comhrt {
+
+	  margin-top: 10px;
+	//  margin-left: 25px;
+
+}
+
+
+
+//this stuff is made irrelevent by angular --- probably will cause problems in the future
+// heart ==================================================================
+$wrapwidth: 422.5px; // 900 // also applies to commentwrap
+
+$wrapheight: 60px; // 50 // also applies to commentwrap
+
+
+$extramrg:15px ;
+
+.heart2 {
+ // margin-top: 438px;
+    margin-left: 452px + $extramrg;
+    position: absolute;
+    width: 60px;
+    height: 50px;       //  <<<<<<<<<<<<<<<<< whats this?
+    font-size:36px;
+    color: #BFBFBF;
+   direction: rtl;
+
+   // background:red;
+}
+// color: #D0CCDD;
+
+
+.heartwrap{
+  border-radius:10px;
+  box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+
+	  height: $wrapheight;
+	//background: white;
+	//border:1px solid #BFBFBF;
+	width: $wrapwidth;
+
+	background: $bgbg;
+//sbox-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+ //box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.8);
+
+
+//border-top-left-radius:25px;
+//border-bottom-left-radius:25px;
+z-index:10;
+
+ transition: filter 0.7s ease;
+
+img {
+
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+
+span {
+  margin-left: 25%;
+
+}
+
+}
+
+.heartwrap:hover {
+//background: black;
+//color: white;
+    cursor:pointer;
+//background: black;
+//color:white;
+    // box-shadow: -5px 0px 25px black;
+    filter:invert(100%);
+    -webkit-filter:invert(100%);
+
+
+}
+
+
+.itschecked {
+  filter:invert(100%);
+  -webkit-filter:invert(100%);
+
+}
+
+// comments ==================================================================
+
+
+.commentwrap{
+  border-radius:10px;
+
+   transition: filter 0.7s ease;
+  box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+
+ //   margin-top: 438px;
+    height: $wrapheight;
+    background: $bgbg;
+  //background: white;
+ // border:1px solid #BFBFBF;
+  //width: $wrapwidth;
+  //margin-left: $wrapwidth + 5px;
+    margin-top:
+$wrapheight * -1;
+  //box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+  //border-radius: 25px;
+// box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.8);
+
+//border-top-right-radius:25px;
+//border-bottom-right-radius:25px;
+//z-index:10;
+
+img {
+  margin-top: 8px;
+  margin-left: 20px;
+
+}
+
+span {
+  margin-left: 20%;
+
+}
+
+
+}
+
+
+.commentwrap:hover {
+cursor:pointer;
+//background: black;
+//color: white;
+    // box-shadow: 5px 0px 25px black;
+     z-index: 9;
+//background: black;
+//color:white;
+filter:invert(100%);
+-webkit-filter:invert(100%);
+}
+
+
+
+
+.czone{
+  border-radius:10px;
+	//margin-left: 20px;
+ //   margin-top: 438px;
+//    min-height: 115px;
+  background: $bgbg;
+ // border:1px solid #BFBFBF;
+  width: ($wrapwidth * 2) + 5;
+
+   margin-top: 10px;
+   box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+
+
+ //box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.8);
+
+
+//border-bottom-right-radius:0px;
+
+padding-top: 10px;
+padding-bottom: 10px;
+
+
+
+}
+
+.comdel {
+//right:0px;
+width:10px;
+height:20px;
+
+//position: absolute;
+padding-left:4px;
+padding-right:4px;
+
+}
+
+.comedit {
+//right:0px;
+width:10px;
+height:20px;
+
+//position: absolute;
+padding-left:4px;
+//padding-right:4px;
+margin-right:4px;
+
+}
+.comedit:hover {
+
+cursor: pointer;
+background:green;
+
+}
+
+.comdel:hover {
+
+cursor: pointer;
+background:red;
+
+}
+
+.comment{
+
+list-style-type: none;
+width: 100%;
+margin-left:-20px;
+padding-left:10px;
+padding-right:10px;
+
+padding-top:5px;
+
+padding-bottom:5px;
+
+font-size:18px;
+
+
+
+}
+
+.comment:hover {
+  background: yellow;
+  //cursor: pointer;
+
+}
+
+
+.commenter {
+	//padding-top: 10px;
+	padding-bottom: 10px;
+	form {
+		padding: 5px;
+		font-size: 24px;
+
+		input {
+			margin-top: 10px;
+			background-color: white;
+  //border:2px solid black;
+    border-radius: 5px;
+
+		}
+				input.commenttext {
+
+			margin-left: -17px;
+		}
+
+
+		input:hover {
+			background: black;
+			color: white;
+		}
+	}
+}
+
+
+// paralax background feature ==================================================================
+
+
+
+.extendo {
+
+
+}
+
+
+
+
+$ptop: 0px;
+
+.newbg {
+	z-index:-111;
+
+margin-left: -17.3vw;
+	width: 100%;
+	height: 1080px;
+	  position: absolute;
+margin-top: 5px;
+	background-size: cover;
+	-moz-background-size: cover;
+
+	padding-top: $ptop;
+
+	padding-bottom: 25px;
+
+
+
+}

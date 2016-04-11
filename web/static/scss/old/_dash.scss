@@ -1,0 +1,272 @@
+
+article {
+
+	font-size: 1.8em;
+	font-weight: 600;
+	color: white;
+
+	//padding-top: 3px ;
+	float: left;
+	overflow: hidden;
+
+
+}
+
+
+
+
+
+.sup {
+
+	background:white;
+}
+
+.headicon {
+
+  font-size: 18px;
+	margin-top:1px;
+	margin-left:  10px;
+
+	a{
+			color:white !important;
+
+		}
+
+
+}
+
+
+
+.headicon2 {
+	margin-top:1px;
+	right:15px;
+	font-weight: 200 ;
+	font-size: 12px ;
+	position: absolute;
+	//border: 2px solid white;
+	padding: 2px;
+	padding-left: 8px ;
+	padding-right: 6px ;
+	color: white;
+	background:black;
+
+a {
+			color:white !important;
+
+		background:black;
+			padding-right:4px;
+			padding-left:4px;
+
+
+}
+	a:hover {
+
+		background:white;
+
+		color:black !important;
+
+	}
+}
+
+.headicon2:hover {
+
+}
+
+
+
+
+#notifs {
+   transition: background 0.7s ease;
+	position:absolute;
+	 margin-top: 1px;
+	 color:white;
+	 background: black;
+	 z-index: 11;
+	 right:184px;
+	 border: 0px solid transparent;
+	 height:23px;
+	font-size: 10px;
+
+}
+
+#notifs:hover {
+	background:white;
+	color:black;
+}
+
+
+
+.dbox {
+	width: 35px;
+	height:35px;
+	background:red;
+	margin:8px;
+}
+
+
+// header ========================================================================
+
+.loadinger {
+	height:4px;
+	width:100%;
+	background:black;
+	position:fixed;
+
+}
+
+.loadingerbg {
+	height:4px;
+	width:100%;
+	background:RGBA(0, 0, 0, 0.5);
+	position:fixed;
+
+}
+
+$head:45px;
+
+#theHead {
+	padding-top:2px;
+	margin-top: 4px;
+
+	width: 100%;
+	height: 31px;
+background:RGBA(0, 0, 0, 0.5);
+	position: fixed;
+	z-index: 10;
+
+		  color:black !important;
+ // box-shadow: 0 0 25px rgba(0,0,0,0.8);
+
+  //border-bottom: 1px solid white;
+  	//border-radius: 25px;
+
+   transition: background 0.7s ease;
+   overflow:hidden;
+}
+
+
+#theHead:hover {
+//height: $head + 45px;
+
+background:RGBA(0, 0, 0, 1);
+}
+
+.headicon {
+	float: left;
+}
+
+
+
+.ersonal {
+	float: left;
+}
+
+
+.pppp {
+	float: left;
+}
+
+.bbbb {
+	font-size: 15px;
+	padding-bottom: 1px;
+	float: left;
+	margin-left:0.15vw;
+	  background: black;
+  padding-left: 6px;
+  padding-right: 5px;
+
+   transition: background 0.7s ease;
+}
+
+.bbbb:hover {
+	background:white;
+	color:black;
+}
+
+// dash  ========================================================================
+
+
+$dashw: 15vw;
+
+#dashitem1 {
+  transition: background 0.7s ease;
+background:RGBA(0, 0, 0, 0.5);
+box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+
+right:10px;
+	margin-top: 40px;
+	color: white;
+	position:fixed;
+//border: 1px solid white;
+	//background:black;
+	width:350px;
+	height: 40vh;
+	z-index:-1;
+	//     box-shadow: 0 0 25px rgba(0,0,0,0.8);
+ list-style: none;
+overflow-y: scroll;
+font-size:12px;
+
+	     ul {
+	     	    list-style: none;
+	     	    list-style-type: none;
+	     }
+li {
+    list-style: none;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 3vw;
+    background: black;
+     transition: background 0.7s ease;
+
+}
+	     li:hover {
+
+
+	     	background: yellow;
+	     	color: black;
+	     	cursor: pointer;
+	     }
+
+
+}
+
+#dashitem1:hover{
+	background:black;
+}
+
+#dashitem2 {
+
+right:30px;
+	margin-top: 65vh;
+	color: white;
+	position:fixed;
+//border: 1px solid white;
+	background:black;
+	width:75px;
+	height: 30vh;
+	z-index:-1;
+//	     box-shadow: 0 0 25px rgba(0,0,0,0.8);
+
+}
+
+#dashitem1:hover {
+z-index: 100;
+}
+
+#dashitem2:hover {
+z-index: 100;
+}
+
+
+@media (max-width: 1580px) {
+
+#dashitem1 {
+	//left:10px;
+}
+
+
+#dashitem2 {
+	//left:10px;
+}
+	}
