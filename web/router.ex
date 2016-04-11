@@ -14,7 +14,7 @@ defmodule Bndrys.Router do
   end
 
   scope "/", Bndrys do
-    pipe_through :browser # Use the default browser stack
+    pipe_through :api # Use the default browser stack
 
     resources "/users", UserController
     post "/registrations", RegistrationController, :create

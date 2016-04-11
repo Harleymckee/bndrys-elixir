@@ -14,7 +14,7 @@ defmodule Bndrys.User do
 
   @derive {Poison.Encoder, only: [:id, :username, :email, :thumb, :cover]}
 
-  @required_fields ~w(name email password)
+  @required_fields ~w(username email password)
   @optional_fields ~w()
 
   @doc """
@@ -27,9 +27,19 @@ defmodule Bndrys.User do
     model
     |> cast(params, @required_fields, @optional_fields)
     |> validate_format(:email, ~r/@/)
-    |> validate_length(:password, min: 5)
-    |> validate_confirmation(:password, message: "Password does not match")
+    |> validate_length(:entered_password, min: 5)
+    |> validate_confirmation(:entered_password, message: "Password does not match")
     |> unique_constraint(:email, message: "Email already taken")
     |> unique_constraint(:username, message: "Username already taken")
+    |> generate_encrypted_password
+  end
+
+  defp generate_encrypted_password(current_changeset) do
+    case current_changeset do
+      %Ecto.Changeset{valid?: true, changes: %{entered_password: entered_password}} ->
+        put_change(current_changeset, :password, Comeonin.Bcrypt.hashpwsalt(entered_password))
+      _ ->
+        current_changeset
+    end
   end
 end
