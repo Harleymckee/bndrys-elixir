@@ -7,7 +7,7 @@ defmodule Bndrys.Repo.Migrations.CreateUser do
       add :email, :string
       add :thumb, :string
       add :cover, :string
-      add :password, :string
+      add :encrypted_password, :string
 
       timestamps
     end

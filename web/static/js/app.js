@@ -32,7 +32,6 @@ class Panel extends React.Component {
   }
 
   checkStatus(response) {
-    debugger
     if (response.status >= 200 && response.status < 300) {
       return response;
     } else {
@@ -74,6 +73,7 @@ parseJSON(response) {
     this.httpPost('/registrations', {user: data})
     .then((data) => {
       localStorage.setItem('phoenixAuthToken', data.jwt)
+      debugger
       //
       // dispatch({
       //   type: Constants.CURRENT_USER,

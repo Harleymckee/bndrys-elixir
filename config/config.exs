@@ -32,5 +32,5 @@ config :guardian, Guardian,
   issuer: "Bndrys",
   ttl: { 3, :days },
   verify_issuer: true,
-  secret_key: {:system, "GUARDIAN_SECRET_KEY"},
+  secret_key: "wolvescomenight",
   serializer: Bndrys.GuardianSerializer
