@@ -1,0 +1,764 @@
+
+
+.makeButs {
+  margin-top: 10px;
+float: right;
+margin-right:5px;
+
+  button {
+    border:0px solid transparent;
+    background:white;
+    color:black;
+   transition: background 0.7s ease;
+         // height: 45px;
+         height: 60px;
+         padding-right:10px;
+         padding-left:10px;
+         font-size:24px;
+         font-weight:800;
+         margin-right: 5px;
+
+   // float:left;
+  }
+
+  button:hover {
+      background:black;
+    color:white;
+
+
+  }
+  input {
+    background:transparent;
+        border:0px solid transparent;
+        cursor: pointer;
+        outline: none;
+  }
+}
+
+
+.makskel {
+   //background:rgba(255,255,255, 0.4);
+  //margin-left: 28.4vw;
+  //height:1250px;
+  width:900px;
+  padding-left:8px;
+
+
+}
+.caption {
+
+  textarea {
+    box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+
+    margin-top: 10px;
+
+    border:0px solid transparent;
+     resize: none;
+     min-height: 50px;
+      outline: none;
+      overflow: auto;
+  }
+  textarea::-webkit-scrollbar { width: 0 !important }
+}
+
+
+
+.makerul {
+
+
+margin-left: 10px ;
+
+zoom: 100%;
+
+}
+
+
+
+
+
+
+
+#horizSlide {
+margin-left: 10px;
+}
+#vertSlide {
+
+  -webkit-transform: rotate(90deg);
+
+                          transform: rotate(90deg);
+
+                          margin-left:800px;
+
+                          margin-top:130px !important;
+
+                          position: absolute;
+}
+$bgbg :white;
+
+// resize er
+
+$wrap: 1000px;
+$bordd:1px ;
+$brclr: #BFBFBF ;
+
+
+
+
+$stagewid: 850px;
+$stageht:$stagewid * 0.5;
+$stagmarg:7% ;
+
+
+
+// buttons
+
+$btnwdth: 170px;
+
+$btnht: 76px;
+
+$btnfntsz: 34px;
+
+
+
+input.thename {
+    font-family: "proxima-nova bold",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+     // border-radius: 5px;
+        border:0px solid transparent;
+        margin-top: 30px;
+        height: 45px;
+         min-width: 285px;
+        font-size: 25px;
+        background: $bgbg;
+        padding-right:10px;
+         padding-left:10px;
+
+}
+
+
+
+
+
+
+
+
+#makerWrap {
+
+margin-left:10px;
+
+input[type=range] {
+
+  margin-top: 15px;
+-webkit-appearance: none;
+background: $bgbg ;
+border: 1px solid grey;
+    border-radius: 5px;
+width: 250px;
+height:15px;
+
+
+//margin-left: auto;
+  //margin-right: auto;
+margin-bottom: 20px;
+
+}
+
+
+}
+
+
+
+
+
+#stage {
+  box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+
+margin-left:10px;
+margin-right:10px;
+margin-top:10px;
+    overflow: hidden ;
+
+  background: $bgbg ;
+  background-size:cover;
+
+ //   margin-right: auto;
+   //margin-left:auto;
+    position: relative;
+    float: left;
+z-index: -0;
+
+
+
+
+}
+
+
+
+$margin:13% ;
+// all this bullshit
+
+
+
+.belowstage {
+  margin-top: $stageht + 9px;
+  //border-bottom: 1px solid black;
+  width: $stagewid - 15px;
+}
+
+.lineTop {
+  margin-left: 69px;
+  margin-top: 8px;
+
+}
+
+.lineBottom {
+  margin-left: 69px;
+  margin-top: 619px;
+
+}
+
+
+
+.nouser {
+
+  font-size: 75px;
+    font-weight: 600;
+   //   width: 0px;
+    white-space:nowrap;
+}
+
+
+
+
+
+
+
+//  loaders  ============================================================================================
+
+$conh: 125px ;
+$conw: 100% ;
+$othrw: 188px ;
+
+
+
+
+
+
+.lastWrap {
+
+
+  margin-left:auto;
+  margin-right:auto;
+  width: 100%;
+
+}
+
+
+
+
+.last {
+  width: 253px;
+form{
+  margin-top:10px;
+}
+
+
+
+
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+
+
+.butWrap {
+    margin-left:auto;
+  margin-right:auto;
+
+
+
+
+}
+
+.but {
+  width: 175px;
+
+  margin-left:auto;
+  margin-right:auto;
+  //  width: 790px;
+
+}
+
+
+$bordd:1px ;
+$brclr: #BFBFBF ;
+
+
+.boxy3 {
+ margin-right: 50px;
+
+ margin-top: 10px;
+  // border:$bordd solid $brclr;
+ //   box-shadow: 0px 0px 5px RGBA(136, 136, 136, 0.8);
+  //  border-radius: 5px;
+  width: 190px;
+  //height: $conh;
+
+  background: $bgbg ;
+}
+.boxy3:hover {
+  cursor: pointer;
+
+}
+.boxy3a {
+ margin-right: 10px;
+  margin-top: 10px;
+
+
+   //border:$bordd solid $brclr;
+//box-shadow: 0px 0px 5px RGBA(136, 136, 136, 0.8);
+    //border-radius: 5px;
+  width: $othrw;
+ // height: $conh;
+ float: left;
+  background:$bgbg ;
+
+}
+.boxy3a:hover {
+cursor: pointer;
+}
+
+
+
+
+
+
+// bigger guys
+
+$boxesw:385px ;
+$boxesh:450px ;
+.boxy4 {
+   // margin-left: 8px;
+  // border:$bordd solid $brclr;
+//box-shadow: 0px 0px 5px RGBA(136, 136, 136, 0.8);
+   // border-radius: 5px;
+  width: $boxesw;
+  min-height: $boxesh + 75px;
+ float: left;
+  background:$bgbg ;
+   margin-top:10px;
+   box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+     margin-right: 10px;
+      // margin-left: -680px;
+}
+.boxy4a {
+
+  box-shadow: 0px 0px 25px RGBA(136, 136, 136, 0.4);
+  // border:$bordd solid $brclr;
+
+   // border-radius: 5px;
+  width: $boxesw;
+  height: $boxesh + 75px;
+  float: left;
+  background:$bgbg ;
+   margin-top:10px;
+  //   margin-left: -285px;
+
+button {
+float:center;
+      border:$bordd solid $brclr;
+      border-radius: 5px;
+        background: $bgbg ;
+        color:black;
+       border-radius: 5px;
+         margin-left: -70px;
+
+}
+button:hover {
+
+background:black;
+color: $bgbg ;
+  }
+
+
+  #realTrash {
+    padding-top: 5px;
+     padding-bottom: 5px;
+    margin-top: -80px;
+    margin-left: 100px;
+
+
+    width: 120px;
+    height: 130px;
+       border:$bordd solid $brclr;
+       background: $bgbg ;
+        border-radius: 5px;
+      overflow-y: scroll;
+
+}
+
+
+      li {
+        list-style: none;
+        padding-left: 9px;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+  }
+
+
+
+
+
+
+
+$intboxh: 400px * (411px / 500px);
+
+
+#thebox {
+
+width: 100%;
+  height: $intboxh - 10px;
+  margin-top: 0px;
+  padding-left: 1.2px;
+  overflow: hidden;
+  overflow-y:scroll;
+
+
+
+}
+
+
+ #thebox li {
+  margin-left: 6.6px;
+
+
+}
+
+
+
+  #trash {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  height: $intboxh;
+border: 0px solid transparent //inheriting a border from jquery UI
+
+}
+
+
+$dblzoneh: 330px;
+$dblzonew: 345px !important;
+
+div.image-decorator {
+
+
+   height : $dblzoneh;
+   width : $dblzonew;
+
+  //border-radius: 5px;
+  margin-left: 20px;
+
+background:$bgbg ;
+     border:$bordd solid $brclr;
+//  box-shadow: 0px 0px 5px RGBA(136, 136, 136, 0.8);
+
+    //background-color : #ffffff;
+
+
+    display : inline-block;
+
+    padding : 5px 5px 5px 5px;
+    width : 490px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blocks {
+
+  }
+
+
+// more loader shit
+
+$galmargtop: 6px ;
+$galmarglft: 36px ;
+
+ #gallery li {
+
+  margin-top: $galmargtop;
+  margin-left: $galmarglft;
+}
+
+ #gallery2 li {
+
+  margin-top: $galmargtop;
+  margin-left: $galmarglft;
+}
+ #gallery3 li {
+
+  margin-top: $galmargtop;
+  margin-left: $galmarglft;
+}
+
+ #gallery4 li {
+
+  margin-top: $galmargtop;
+  margin-left: $galmarglft;
+}
+
+.loader:hover {
+
+
+}
+
+
+$galht:112.5px;
+
+ #gallery {
+    float: left;
+ border-radius: 5px;
+  height: $galht;
+  margin-top: 0px;
+    width: $conw;
+
+}
+
+
+ #gallery2 {
+  float: left;
+ border-radius: 5px;
+  height: $galht;
+  margin-top: 0px;
+    width: $conw;
+}
+
+
+
+ #gallery3 {
+  float: left;
+  border-radius: 5px;
+  height: $galht;
+  margin-top: 0px;
+    width: $conw;
+}
+
+ #gallery4 {
+  float: left;
+
+  height: $galht;
+  margin-top: 0px;
+    width: $conw;
+}
+
+
+
+  .gallery.custom-state-active {
+
+  }
+
+  .gallery li {
+    float: left;
+    //width: 110px;
+    padding: 0.4em;
+    margin: 0.4em 0.4em 0.4em 0.4em;
+    text-align: center;
+  }
+
+  .gallery li h5 {
+    margin: 0 0 0.4em;
+    cursor: move;
+  }
+
+  .gallery li a {
+    float: right;
+  }
+
+  .gallery li a.ui-icon-zoomin {
+    float: left;
+  }
+
+  .gallery li img {
+    //width: 100%;
+
+  }
+
+  #thebox li img {
+    cursor: move;
+  }
+
+  #trash li img {
+    cursor: move;
+  }
+
+
+
+//  transform icons  ============================================================================================
+
+.item {
+
+    cursor:crosshair;
+}
+div.rotright {
+    background: url(icons/rotate.png) left center no-repeat RGBA(255, 255, 102, 1);
+    background-size:cover;
+    width: 30px;
+    height: 30px;
+    right:0;
+    cursor:pointer;
+    float: right;
+          z-index: 100;
+   position: absolute;
+   z-index: 100000;
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+div.flipaight {
+      background: url(icons/flip.png) left center no-repeat RGBA(135, 255, 135, 1);
+    background-size:cover;
+    width: 30px;
+
+    height: 30px;
+      z-index: 100000;
+    position: absolute;
+    bottom: 0;
+
+
+    float: left;
+
+list-style:none;
+
+    cursor:pointer;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+div.remover {
+      background: url(icons/cross.png) left center no-repeat RGBA(255, 144, 128, 1);
+    background-size:cover;
+    width: 30px;
+
+    height: 30px;
+      z-index: 100000;
+    position: absolute;
+    top: 41%;
+
+
+    float: left;
+
+list-style:none;
+
+    cursor:pointer;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+div.zindex {
+      background: url(icons/down.png) left center no-repeat RGBA(128, 255, 250, 1);
+    background-size:cover;
+    width: 30px;
+
+    height: 30px;
+      z-index: 100000;
+    position: absolute;
+   left: 0%;
+
+
+
+
+list-style:none;
+
+    cursor:pointer;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+div.zindex2 {
+      background: url(icons/up.png) left center no-repeat RGBA(128, 255, 250, 1);
+    background-size:cover;
+    width: 30px;
+
+    height: 30px;
+      z-index: 100000;
+    position: absolute;
+   left: 41%;
+
+
+
+
+list-style:none;
+
+    cursor:pointer;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+
+.icons {
+    opacity:0.5;
+
+}
+.icons:hover {
+     opacity:1;
+
+}

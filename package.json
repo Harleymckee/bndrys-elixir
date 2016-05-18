@@ -1,11 +1,16 @@
 {
   "repository": {},
   "dependencies": {
-    "babel-brunch": "^6.0.0",
+    "babel-brunch": "^6.0.2",
+    "babel-preset-react": "^6.5.0",
     "brunch": "^2.0.0",
     "clean-css-brunch": ">= 1.0 < 1.8",
     "css-brunch": ">= 1.0 < 1.8",
+    "es6-promise": "^3.1.2",
+    "isomorphic-fetch": "^2.2.1",
     "javascript-brunch": ">= 1.0 < 1.8",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
     "sass-brunch": "^2.0.0",
     "uglify-js-brunch": ">= 1.0 < 1.8"
   }

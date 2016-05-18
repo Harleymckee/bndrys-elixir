@@ -1,0 +1,112 @@
+
+
+
+
+
+<div ng-if="actanos && maker.user" class="makskel">
+
+
+<div>
+<!--
+                    <input type="radio"  value="330" ng-model="swidth"> skinny
+
+                    <input type="radio" value="672" ng-model="swidth"> fat
+
+
+                     <input type="radio"  value="350" ng-model="sheight"> short
+
+                    <input type="radio" value="480" ng-model="sheight"> tall
+-->
+
+   <input type="text" name="thename" class="thename" placeholder="Remember, be nice!">
+
+
+
+  <input ng-model="bgColor" type="color" name="favcolor" value="#ffffff">
+</div>
+
+
+
+
+
+
+
+
+<the-stage>
+</the-stage>
+
+
+
+
+
+
+
+
+<div ng-style="{ 'margin-left' : (swidth + 18) }">
+    <the-gallery></the-gallery>
+
+</div>
+
+<div id="makerWrap"  class="makerul">
+
+
+<div class="caption">
+<textarea  placeholder="Remember, be nice!" class="auto-size" ng-style="{'width': swidth}" onkeyup="textAreaAdjust(this)" ></textarea>
+</div>
+
+
+
+
+
+                          <!-- <input id="horizSlide" type="range" min="326" max="672"  ng-model="swidth">    -->
+
+ <!-- <input type="range"  min="350" max="500"  ng-model="sheight"  ng-style="{'margin-left': swidth - 95}" >  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <the-booth></the-booth>
+
+
+                      <the-box> </the-box>
+<!--
+
+                <div class="boxy4a"></div>
+
+                -->
+
+                <div class="makeButs">
+
+<button ng-click="maker.submit(swidth, sheight, bgColor)">submit</button>
+<button ng-click="actanos=!actanos">cancel</button>
+
+
+
+
+
+  </div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script type='text/javascript' src="_js/droppable.js"></script>
+
+<script type='text/javascript' src="_js/loader.js"></script>

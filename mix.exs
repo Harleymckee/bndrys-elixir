@@ -18,7 +18,7 @@ defmodule Bndrys.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Bndrys, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext, :comeonin,
                     :phoenix_ecto, :postgrex]]
   end
 
@@ -33,6 +33,8 @@ defmodule Bndrys.Mixfile do
     [{:phoenix, "~> 1.1.1"},
      {:phoenix_ecto, "~> 2.0"},
      {:postgrex, ">= 0.0.0"},
+     {:guardian, "~> 0.10.0"},
+     {:comeonin, "~> 2.3"},
      {:phoenix_html, "~> 2.3"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},

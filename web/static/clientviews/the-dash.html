@@ -1,0 +1,118 @@
+
+
+
+<div class="bbbggg" ng-style="{ 'background' : theColors}"></div>
+
+<div class="loadingerbg">
+<div class="loadinger"></div>
+</div>
+
+<div id="theHead">
+
+                    <article>
+
+     <div class="headicon">
+
+                    <a style="color:white;" href="/">
+
+
+                            <div class="bbbb">bndrys</div>
+
+<!--                      <div class="ersonal">ndrys</div>
+
+                     <p style="color:black; margin-left:0px; margin-top:40px; font-size: 48px;"> demo </p>
+
+-->
+
+                      </a>
+                    </div>
+
+<div class="sup">
+
+                    <div ng-if="dash.user" class="headicon2">
+
+                          Sup,
+
+    <a style="color:white;" href="/profile">
+    <img ng-src="{{dash.user.local.thumb}}" width="20px" height="20px" style="margin-top:-1px;">
+
+                      {{dash.user.local.username}} </a>
+
+                      -
+                     <!-- <button style="color:white;" ng-click="act = !act"> notifs </button> --> -
+                           <a style="color:white;" href="/logout"> logout </a>
+
+                    </div>
+
+
+                    <div ng-if="!dash.user" class="headicon2">
+
+                    Sup,
+
+
+
+
+                    <a class="whitelink" href="/login">Log on in</a>
+
+                    (Closed Beta)
+
+<!--
+                    <a class="whitelink" href="/signup">Sign Up</a>
+
+-->
+
+                    </div>
+</div>
+
+                    </article>
+
+<!--
+<div>
+<button>all</button>
+<button>my ppl</button>
+<button>mine</button>
+
+</div>
+-->
+
+<div ng-if="dash.user" >
+<div>
+
+
+
+ <button  id="notifs" ng-click="dash.openClose()">{{dash.user.local.notifs.length}} notif<span ng-if="dash.user.local.notifs.length != 1">s</span> </button>
+
+<div id="dashitem1" ng-if="act">
+<ul>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{dash.user.local.notifs.length}} notification<span ng-if="dash.user.local.notifs.length != 1">s</span>
+<li ng-repeat="notif in dash.user.local.notifs" ng-click="dash.notdel(notif)">
+{{notif.username}} {{notif.type}} {{notif.bname}}
+</li>
+</ul>
+</div>
+
+</div>
+
+
+
+
+
+<!--
+<div id="dashitem2">
+<div class="dbox">
+
+</div>
+
+<div class="dbox">
+
+</div>
+<div class="dbox">
+
+</div>
+<div class="dbox">
+
+</div>
+
+</div>
+
+-->

@@ -1,0 +1,69 @@
+
+
+
+                <div class="boxy4a">
+                    <h3 align="center">The Box</h3>
+
+
+                       <!-- THEEEE BOOOOOXXXXXX -->
+
+                  <div class="image-decorator">
+
+                        <div id="thebox">
+
+
+                            <ul id="boxxx" class="gallery ui-helper-reset ui-helper-clearfix">
+
+
+
+
+                                <li class="ui-widget-content blocks" ng-repeat="pic in box.pictures">
+
+
+
+                                <script type='text/javascript' src="_js/upload.js"></script>
+
+                                <!-- idk how i feel about this ^^^ -->
+
+                                    <img ng-src="{{pic.path}}" alt="" height="85px" width="85px"/>
+
+                                </li>
+
+
+
+
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <!-- / THE BOX -->
+
+
+            <div>
+              <div id="boxbuts">
+
+
+
+   <button  ng-file-select ng-file-change="upload($files)" ng-model="files" ng-multiple="true">Select Images or Gifs</button>
+
+
+<br>
+<br>
+<button ng-click="box.empty()">Empty Trash</button>
+<br>
+<div ng-if="box.loading"> <img src="http://www.turismoinliguria.it/images/loader.gif"> </div>
+<div id="realTrash"> </div>
+
+
+
+
+             </div>
+            </div>
+
+
+                </div>
+
+            <script type='text/javascript' src="_js/droppable.js"></script>

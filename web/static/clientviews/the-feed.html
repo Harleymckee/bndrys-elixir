@@ -1,0 +1,211 @@
+<div infinite-scroll='infinite.nextPage()' infinite-scroll-disabled='infinite.busy' infinite-scroll-distance='5'>
+
+
+
+<div class="feedul">
+
+
+<the-nav></the-nav>
+
+<the-maker> </the-maker>
+
+
+
+<the-profile></the-profile>
+
+
+
+<div class="feedli" ng-repeat="bndry in infinite.bndrys" ng-class="{extendo: bndry.bgbgbg == true}">
+
+
+
+
+
+
+<div id="{{bndry._id}}" class="wrappp2" ng-class="{extendo: bndry.bgbgbg == true}" ng-style="{'width': bndry.width}">
+
+<!-- 'margin-left': ((850 -bndry.width) / 2) +2.5} -->
+
+<!-- ng-style="{'width': bndry.width}" -->
+
+    <div class="byuser">
+	<h5 align="center">
+    <a href="#">{{bndry.bndryname}}</a>
+    </h5>
+
+    <h6> by
+
+   <a href="#">
+    <img ng-src="{{bndry.thumb}}" width="30px" height="30px">
+        </a>
+    <a class="uname" ng-click="feed.thisBndry(bndry)">
+    {{bndry.username}}
+    </a>
+
+     <span ng-if="feed.user.local.username === bndry.username" ng-click="feed.deleteBndry(bndry)"> delete </span>
+     <span ng-if="feed.user.local.username !== bndry.username" ng-click="feed.addFriend(bndry)"> {{feed.addorno}} </span>
+    </h6>
+
+
+
+
+    </div>
+
+
+
+
+</div>
+
+
+                <!-- stage -->
+
+                	<div class="stage2 boxy" ng-style="{'width': bndry.width, 'background': bndry.color,  'height': bndry.height}">
+                  <!-- 'margin-left': ((850 -bndry.width) / 2)+2.5 -->
+
+                  <!--ng-style="{'width': bndry.width, 'height': bndry.height,
+                                                        'background': bndry.color}" -->
+
+                    <div>
+
+                    <div ng-repeat="pic in bndry.stage">
+
+                    <div class="stuckItem" style="{{pic.location}}">
+
+                     <img ng-src="{{pic.src}}" style="{{pic.size}}" />
+
+                    </div>
+
+                	</div>
+
+                    </div>
+
+                    </div>
+
+                <!-- /stage -->
+
+
+
+
+
+<div class="comhrt">
+
+<div class="caption">
+
+ </div>
+
+
+<div class="heartwrap" ng-class="{itschecked: bndry.liked == 'unlike'}"  ng-click="feed.like(bndry)" ng-init="feed.preLike(bndry)" ng-style="{'width': (bndry.width / 5.5) - 2.5}">
+
+<!--   'margin-left': ((850 -bndry.width) / 2)+2.5-->
+
+
+ <img src="http://dev.bowdenweb.com/a/i/cons/icomoon/svg/heart2.svg" height="45px" width="50px">
+
+<!--
+<span ng-if="feed.user"> {{bndry.liked}} </span>-->
+{{bndry.likes.length}}
+
+
+</div>
+
+
+
+
+<div class="commentwrap" ng-click="active = !active" ng-class="{itschecked: active}"  ng-style="{'width': (bndry.width / 5.5) - 2.5, 'margin-left': (bndry.width / 5.5) + 5}" >
+<!--
+'margin-left': (((850 -bndry.width) / 2)+2.5) + ((bndry.width / 2) + 5) -->
+
+
+   <img src="https://cdn4.iconfinder.com/data/icons/miu/22/other_conversation_review_comment_bubble_talk-512.png" height="45px" width="50px">
+
+
+{{bndry.comments.length}}
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+<div class="commentwrap" ng-style="{'width': (bndry.width / 1.6) - 3, 'margin-left': 2 * (bndry.width / 5.5) + 10}" >
+
+<span> kk </span>
+</div>
+
+<div class="czone" ng-style="{'width': bndry.width}"  ng-if="active" ng-hide="bndry.comments.length == 0 && !feed.user">
+
+<!-- 'margin-left': ((850 -bndry.width) / 2)+2.5-->
+                             <ul>
+                            <li class="comment" ng-repeat="comment in bndry.comments">
+                            <strong>{{comment.username}}:</strong> {{comment.wrote}}
+
+<div ng-if="comment.username === feed.user.local.username" style="float:right;">
+                                <span class="comedit" align=> <strong>edit </strong>  </span>
+
+                            <span ng-click="feed.deleteComment(bndry, comment)" class="comdel"> <strong> delete</strong>  </span>
+</div>
+
+
+
+                            </li>
+
+
+                            <div class="commenter" ng-if="feed.user">
+
+                            <form name="cForm" ng-submit="cForm.$valid && feed.addComment(bndry)" novalidate>
+
+                                    <input
+                                     ng-style="{'width': bndry.width - 150}"
+
+
+
+                                     name="comment" type="text" ng-model="bndry.commenter" class="commenttext" required>
+                                    <input type="submit">
+
+                                    </form>
+
+                            </div>
+
+                            </ul>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div> <!-- li -->
+
+
+
+
+<div ng-if="infinite.busy" class="infload">
+
+<img src="{{infinite.loadpic}}" height="50px" width="60px"> loading...
+
+</div>
+
+
+
+
+
+</div><!-- ul  -->
+
+
+
+
+</div> <!-- infinite  -->
